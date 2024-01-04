@@ -1,0 +1,31 @@
+@use "sass:map";
+@import '../../../assets/scss/customvariables';
+
+.astro-image-size {
+    height: 11rem !important;
+    width: 11rem !important;
+  }
+
+  @media (min-width: map.get($breakpoints,"sm")){
+    $equal_height : 8rem;
+    .astro-image-size {
+              height: $equal_height !important;
+              width: $equal_height !important;
+            }
+  }
+
+  @media (min-width: map.get($breakpoints,"md")){
+    $equal_height : 9rem;
+    .astro-image-size {
+              height: $equal_height !important;
+              width: $equal_height !important;
+            }
+  }
+
+  @media (min-width: map.get($breakpoints,"lg")){
+      $equal_height : 10rem;
+    .astro-image-size {
+              height: $equal_height !important;
+              width: $equal_height !important;
+            }
+  }
